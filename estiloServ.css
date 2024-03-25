@@ -1,0 +1,144 @@
+/*barra do menu, espaçamento, cobertura da margem*/
+body {
+    background-color:#559e83; /* Cor de fundo */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: 	#1b85b8;
+    color: #fff;
+    padding: 0px 45px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+/*estilo da barra do menu, espaço entre as opções*/
+nav ul li {
+    display: inline-block;
+    margin: 0;
+    margin-right: 140px;
+}
+
+/* ajusta a margem para o logo */
+nav ul li.logo {
+    margin-left:-30px;
+
+}
+
+nav ul li:last-child {
+    margin-right: 0px;
+}
+
+/*opções do menu (clicaveis) * Estilização das letras e fundo*/
+nav ul li a {
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 18px;
+    color: #fdfdfd;
+}
+
+/*traço quando passa o mouse em cima das opções do menu*/
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    position: relative;
+    clear: both; /* Isso garante que o footer fique abaixo de todos os elementos flutuantes */
+    width: 100%; /* Faz o rodapé se estender por toda a largura da tela */
+    height: 185px; /* Altura do rodapé: ajuste conforme necessário */
+    background-color: #1b85b8;
+    color: #fdfdfd;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 16px;
+    padding: 20px 10px;
+}
+
+address{
+    padding: 30px;
+    font-size: 12px;
+
+}
+
+.sobre-nos{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+}
+
+
+.sobre-nos ul{
+    list-style: none; /*retira a marcação de itens*/
+    padding: 0px; /*deixa os tópicos centralizados abaixo de 'Sobre nós'*/
+    margin: 20px;
+}
+
+.sobre-nos ul li a {
+    text-decoration: none;
+    color: #fdfdfd /* Mesma cor do fundo */
+  }
+  
+  .sobre-nos ul li a:hover {
+    text-decoration: none; /* Sem sublinhado */
+  }
+
+fieldset {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+select {
+    margin: auto;
+    padding: 5px;
+    border: 1px solid #ccc; /* Borda sutil */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+form button {
+    padding: 10px;
+    float: right;
+    padding: 10px 30px;
+    border-radius: 10px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar clicabilidade */
+}
+
+
+#porte-animal,
+#telebusca,
+#calendario,
+#valor {
+    margin-top: 20px;
+}
+
+#calendario {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.escondido {
+    display: none;
+}
+
+.valor-formatado {
+    margin-top: 100px; /* Distancia do valor do elemento anterior */
+    font-weight: bold; /* Deixa o texto em negrito */
+    font-family: Arial, Helvetica, sans-serif; /* Define a nova fonte */
+    font-size: 24px; /* Aumenta o tamanho da fonte */
+    color: #4c4c4c;
+    
+  }

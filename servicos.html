@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços Pet</title>
+    <link rel="stylesheet" href="estiloServ.css">
+</head>
+
+<body>
+    <header> <!--cabeçalho-->
+        <!-- Inserir informações da Petshop, links de navegação para as páginas, cadastramento do usuário etc. -->
+        <nav>
+            <ul>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="#">Carrinho</a></li>
+                <li class="logo"><a href="index.html"><img src="logoPetShow.png" width=100px height=auto
+                            alt="Logo PetShop"></a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="formulario.html">Entre ou Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <form action="https://formsubmit.co/nathalia-chagas@hotmail.com" method="post">
+        <fieldset>
+            <legend style="font-weight: bold; font-size: 18px; font-family: Arial, Helvetica, sans-serif">Agende o
+                serviço para seu Pet</legend <label for="servico">Selecione o serviço:</label>
+            <select id="servico" name="servico">
+                <option value="">Selecione</option>
+                <option value="banho">Banho</option>
+                <option value="banho-tosa">Banho e Tosa</option>
+                <option value="banho-tosa-higienica">Banho e Tosa Higiênica</option>
+                <option value="tosa">Tosa</option>
+                <option value="tosa-higienica">Tosa Higiênica</option>
+            </select>
+            <div id="porte" class="escondido">
+                <label for="porte">Qual o porte do Pet?</label>
+                <br>
+                <input type="radio" id="porte-grande" name="porte" value="grande">
+                <label for="porte-grande">Grande</label>
+                <br>
+                <input type="radio" id="porte-pequeno" name="porte" value="pequeno">
+                <label for="porte-pequeno">Pequeno</label>
+            </div>
+            <div id="telebusca" class="escondido">
+                <label for="telebusca">Incluir Serviço de Telebusca?</label>
+                <br>
+                <input type="radio" id="telebusca-sim" name="telebusca" value="sim">
+                <label for="telebusca-sim">SIM</label>
+                <br>
+                <input type="radio" id="telebusca-nao" name="telebusca" value="nao">
+                <label for="telebusca-nao">NÃO</label>
+            </div>
+
+            <div id="calendario" class="escondido">
+                <label for="data-agendamento">Escolha o dia e horário:</label>
+                <input type="date" id="data-agendamento" name="data-agendamento">
+                <input type="time" id="hora-agendamento" name="hora-agendamento">
+            </div>
+
+            <div id="valorPagamento" class="valor-formatado"></div>
+
+            <br>
+            <br>
+            <div id="açoes" class="botoes">
+                <button type="reset">Limpar</button>
+                <button type="submit">Adicionar ao Carrinho</button>
+                <button id="Cancelar">Cancelar</button>
+                <script>
+                    document.getElementById("Cancelar").addEventListener("click", function () {
+                        window.location.href = "index.html";
+                    });
+                </script>
+            </div>
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer> <!--rodapé--> <!--Inserir informações legais de autoria, contato, links de navegação-->
+        <div class="sobre-nos">
+            <h2>Sobre Nós</h2>
+            <ul>
+                <li><a href="#">Quem Somos</a></li><br>
+                <li><a href="#">Nossas Lojas</a></li><br>
+                <li><a href="#">Trabalhe Conosco</a></li>
+            </ul>
+        </div>
+        <div class="contato">
+            <p>Ficou com dúvida? Entre em contato com nosso time AU-Mável no telefone: (11) 1234-5678</p>
+            <p>Endereço: Rua Patitas, 123 - Bairro dos Pets - São Paulo - SP - CEP: 01234-56</p>
+            <p>Horário de funcionamento: de segunda a sábado das 08h às 23h</p>        
+            <address> Site desenvolvido por Nathalia Chagas</address>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+/*barra do menu, espaçamento, cobertura da margem*/
+body {
+    background-color: #559e83;
+    /* Cor de fundo */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1b85b8;
+    color: #fff;
+    padding: 0px 45px;
+}
+
+h2 {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+/*estilo da barra do menu, espaço entre as opções*/
+nav ul li {
+    display: inline-block;
+    margin: 0;
+    margin-right: 140px;
+}
+
+/* ajusta a margem para o logo */
+nav ul li.logo {
+    margin-left: -30px;
+
+}
+
+nav ul li:last-child {
+    margin-right: 0px;
+}
+
+/*opções do menu (clicaveis) * Estilização das letras e fundo*/
+nav ul li a {
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 18px;
+    color: #fdfdfd;
+}
+
+/*traço quando passa o mouse em cima das opções do menu*/
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+article {
+    margin-left: 70px;
+    margin-bottom: 20px;
+    /* Adiciona um espaço entre o texto e a imagem */
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+/* Estilo para o <aside> */
+aside {
+    width: auto;
+    /* Ou uma porcentagem específica, dependendo do layout desejado */
+    max-width: 100%;
+    /* Garante que não exceda a largura da tela */
+    float: right;
+    /* Faz o aside flutuar para a direita */
+    display: block;
+}
+
+/* Estilo para imagens dentro de <aside> */
+aside img {
+    max-width: 100%;
+    /* Faz com que as imagens dentro de <aside> se ajustem ao container */
+    height: auto;
+    /* Mantém a proporção da imagem */
+}
+
+/* Adicione estas regras ao seu arquivo CSS existente */
+
+footer {
+    position: relative;
+    clear: both;
+    /* Isso garante que o footer fique abaixo de todos os elementos flutuantes */
+    width: 100%;
+    /* Faz o rodapé se estender por toda a largura da tela */
+    height: auto;
+    /* Altura do rodapé: ajuste conforme necessário */
+    background-color: #1b85b8;
+    color: #fdfdfd;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 16px;
+    padding: 20px 10px;
+}
+
+address {
+    padding: 30px;
+    font-size: 12px;
+
+}
+
+.sobre-nos {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+}
+
+
+.sobre-nos ul {
+    list-style: none;
+    /*retira a marcação de itens*/
+    padding: 0px;
+    /*deixa os tópicos centralizados abaixo de 'Sobre nós'*/
+    margin: 20px;
+}
+
+.sobre-nos ul li a {
+    text-decoration: none;
+    color: #fdfdfd
+        /* Mesma cor do fundo */
+}
+
+.sobre-nos ul li a:hover {
+    text-decoration: none;
+    /* Sem sublinhado */
+}
+
+/* Estilização dos campos de entrada no formulário */
+form fieldset {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form select {
+    margin: auto;
+    padding: 5px;
+    float: center;
+    border: 1px solid #ccc;
+    /* Borda sutil */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+}
+
+form input {
+    margin: auto;
+    padding: 5px;
+    float: center;
+    border: 1px solid #ccc;
+    /* Borda sutil */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+}
+
+form input[type="checkbox"] {
+    margin: 12px;
+    padding: 6px;
+}
+
+form input[type="file"] {
+    padding: 5px 8px;
+    color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    float: right;
+    padding: 10px 30px;
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+    /* Muda o cursor para indicar clicabilidade */
+}
+
+.swiper {
+    height: 300px;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+
+}
+
+.swiper-slide {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: left ;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #1D1D1D;
+}
+
+
+img {
+    box-shadow: 0 15px 50px #0003;
+    max-width: 100%; /* Ajuste conforme necessário */
+
+}
+
+.botaoAdd {
+    float: right;
+    border-radius: 100px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+}

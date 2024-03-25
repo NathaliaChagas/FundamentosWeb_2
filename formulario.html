@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro - Pet Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header> <!--cabeçalho-->
+        <!-- Inserir informações da Petshop, links de navegação para as páginas, cadastramento do usuário etc. -->
+        <nav>
+            <ul>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="#">Carrinho</a></li>
+                <li class="logo"><a href="index.html"><img src="logoPetShow.png" width=100px height=auto
+                            alt="Logo PetShop"></a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="formulario.html">Entre ou Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+
+
+    <form action="https://formsubmit.co/nathalia-chagas@hotmail.com" method="post">
+        <fieldset>
+            <legend style="font-weight: bold; font-size: 18px; font-family: Arial, Helvetica, sans-serif">Informações
+                Pessoais</legend>
+            <label>Nome Tutor(a) *</label>
+            <input type="text" name="nome" placeholder="Digite seu nome" required />
+            <label>CPF Tutor(a) *</label>
+            <input type="text" name="cpf" placeholder="123.456.789-10" required />
+            <br>
+            <br>
+            <label>E-mail *</label>
+            <input type="email" name="email" placeholder="usuario@email.com" required />
+            <label>Telefone *</label>
+            <input type="tel" name="telefone" placeholder="(DDD)99999-9999" required />
+        </fieldset>
+        <br>
+        <br>
+
+
+        <fieldset>
+            <legend style="font-weight: bold; font-size: 18px; font-family: Arial, Helvetica, sans-serif">Informações do
+                Endereço</legend>
+            <label>CEP *</label>
+            <input type="text" name="cep" placeholder="00000-000" required />
+            <p>Tipo Logradouro *
+                <select name="tipo_logradouro">
+                    <option value="rua">Rua</option>
+                    <option value="av">Avenida</option>
+                    <option value="estrada">Estrada</option>
+                    <option value="alameda">Alameda</option>
+                    <option value="quadra">Quadra</option>
+                </select>
+                <label>Logradouro *</label>
+                <input type="text" name="logradouro" placeholder="Rua dos Pets" required />
+                <label>Número *</label>
+                <input type="text" name="num_casa" placeholder="1234" required />
+                <label>Bairro *</label>
+                <input type="text" name="bairro" placeholder="Petlândia" required />
+                <br>
+                <br>
+                <label>Estado *</label>
+                <input type="text" name="estado" placeholder="UF" required />
+                <label>Cidade</label>
+                <input type="text" name="cidade" placeholder="Cidade" required />
+        </fieldset>
+        <br>
+        <br>
+
+
+        <fieldset>
+            <legend style="font-weight: bold; font-size: 18px; font-family: Arial, Helvetica, sans-serif">Informações do
+                Pet</legend>
+            <label>Nome Pet *</label>
+            <input type="text" name="nome_pet" placeholder="Digite o nome do Pet" required />
+            <label>Idade Pet *</label>
+            <input type="text" name="idade_pet" placeholder="Digite a idade do pet" required />
+            <label>Foto Pet *</label>
+            <input type="file" name="foto_pet" />
+            <br>
+            <br>
+            <legend>Qual a espécie do seu Pet? *</legend>
+            <input type="checkbox" name="cachorro" value="cachorro" />
+            <label>Cachorro</label>
+            <input type="checkbox" name="gato" value="gato" />
+            <label>Gato</label>
+            <br>
+            <br>
+            <label>Raça *</label>
+            <input type="text" name="raça" placeholder="Raça do Pet" required />
+            <label>Cor *</label>
+            <input type="text" name="cor" placeholder="Cor do Pet" required />
+            <p>Temperamento *
+                <select name="temperamento_pet">
+                    <option value="calmo">Calmo e dócil</option>
+                    <option value="ativo">Ativo e brincalhão</option>
+                    <option value="protetor">Protetor e leal</option>
+                    <option value="independente">Independente</option>
+                    <option value="afetuoso">Afetuoso e carente</option>
+                    <option value="timido:">Tímido</option>
+                    <option value="outros">Outros</option>
+                </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend style="font-weight: bold; font-size: 18px; font-family: Arial, Helvetica, sans-serif">Crie sua Senha
+            </legend>
+            <label>Digite a Senha</label>
+            <input type="password" name="senha" minlength="8" placeholder="Insira uma senha" required />
+            <label>Confirme a senha</label>
+            <input type="password" name="confirm_senha" placeholder="Confirme a senha" required />
+            <br>
+            <br>
+            <button type="submit">Enviar formulário</button>
+            <button type="reset">Limpar formulário</button>
+            <button id="btnCancelar">Cancelar</button>
+            <script>
+                document.getElementById("btnCancelar").addEventListener("click", function () {
+                    window.location.href = "index.html";
+                });
+            </script>
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <br>
+    <footer> <!--rodapé--> <!--Inserir informações legais de autoria, contato, links de navegação-->
+        <div class="sobre-nos">
+            <h2>Sobre Nós</h2>
+            <ul>
+                <li><a href="#">Quem Somos</a></li><br>
+                <li><a href="#">Nossas Lojas</a></li><br>
+                <li><a href="#">Trabalhe Conosco</a></li>
+            </ul>
+        </div>
+        <div class="contato">
+            <p>Ficou com dúvida? Entre em contato com nosso time AU-Mável no telefone: (11) 1234-5678</p>
+            <p>Endereço: Rua Patitas, 123 - Bairro dos Pets - São Paulo - SP - CEP: 01234-56</p>
+            <p>Horário de funcionamento: de segunda a sábado das 08h às 23h</p>        
+            <address> Site desenvolvido por Nathalia Chagas</address>
+        </div>
+    </footer>
+</body>
+
+</html>
